@@ -68,6 +68,7 @@ function install_php() {
     fi
 
     echo "Compiling PHP."
+    make
     make install
 
     # Copy configuration file
@@ -137,6 +138,7 @@ function install_pecl() {
         ${3}
 
     echo "Compiling ${1}."
+    make
     make install
 
     # Copy configuration files

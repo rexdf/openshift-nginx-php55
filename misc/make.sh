@@ -14,6 +14,12 @@ echo "Start to Build"
 #unset GIT_DIR
 
 umask 077
+export OPENSHIFT_RUN_DIR=${OPENSHIFT_RUNTIME_DIR}/run/
+export OPENSHIFT_LOG_DIR=$OPENSHIFT_HOMEDIR"diy/logs"
+#${OPENSHIFT_DIY_LOG_DIR}
+export OPENSHIFT_BIN=${OPENSHIFT_RUNTIME_DIR}/bin/
+
+export PATH=${OPENSHIFT_BIN}:$PATH
 
 # When using rockmongo this is set and can cause strange errors here
 export PHPRC=${OPENSHIFT_RUNTIME_DIR}/etc/php5/
