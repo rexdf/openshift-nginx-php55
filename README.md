@@ -22,13 +22,9 @@ uses the php.ini-development from the php archive and moves it into the
 correct folder.
 
 The script does not remove the source files, so you can easily recompile
-Apache or PHP. Have a look at the shell script to see with which options
+Nginx or PHP. Have a look at the shell script to see with which options
 both were compiled the first time.
 
-The misc/parse_templates.py script takes the template files from misc/templates and
-replaces some variables with the actual folder pathes (because these
-depend on the application, they cannot be hardcoded). It then copies
-the file to the appropiate location.
 
 Usage
 -----
